@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>流星背景测试</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .meteor-demo {
+      min-height: 100vh;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .meteor-demo__panel {
+      width: min(100%, 420px);
+      padding: 28px 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 248, 238, 0.08);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .meteor-demo__panel h1 {
+      max-width: none;
+      margin-bottom: 12px;
+    }
+
+    .meteor-demo__panel p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="star-field" aria-hidden="true"></div>
+  <div class="meteor-layer" aria-hidden="true"></div>
+
+  <main class="meteor-demo">
+    <section class="meteor-demo__panel">
+      <p class="eyebrow">Meteor Background Demo</p>
+      <h1>流星背景测试</h1>
+      <p>请等待几秒，观察右上方向左下方划过的长尾流星。</p>
+    </section>
+  </main>
+
+  <script>
+    window.METEOR_SETTINGS = {
+      maxMeteors: 3,
+      initialDelay: [80, 160],
+      spawnInterval: [900, 1600],
+      batchChance: 0.34,
+      duration: [1100, 1600],
+      length: [260, 390],
+      thickness: [2.2, 3.2],
+      opacity: [0.86, 1],
+    };
+  </script>
+  <script src="meteor.js"></script>
+</body>
+</html>

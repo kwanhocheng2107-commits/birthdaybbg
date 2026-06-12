@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#111421">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="生日礼物">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title></title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@400;500;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="star-field" aria-hidden="true"></div>
+  <div class="meteor-layer" aria-hidden="true">
+    <span class="meteor meteor--one"></span>
+    <span class="meteor meteor--two"></span>
+    <span class="meteor meteor--three"></span>
+  </div>
+  <div class="moon" aria-hidden="true"></div>
+
+  <section class="gate" id="gate" aria-labelledby="gateTitle">
+    <div class="stardust-layer" aria-hidden="true">
+      <span class="stardust" style="--dust-top: 22%; --dust-left: 20%; --dust-x: -24vw; --dust-y: -12vh; --dust-size: 3px; --dust-delay: 40ms; --dust-duration: 1500ms; --dust-color: rgba(255, 214, 138, 0.86);"></span>
+      <span class="stardust" style="--dust-top: 24%; --dust-left: 72%; --dust-x: 18vw; --dust-y: -14vh; --dust-size: 4px; --dust-delay: 90ms; --dust-duration: 1680ms; --dust-color: rgba(255, 247, 236, 0.9);"></span>
+      <span class="stardust" style="--dust-top: 32%; --dust-left: 36%; --dust-x: -14vw; --dust-y: -18vh; --dust-size: 2px; --dust-delay: 120ms; --dust-duration: 1520ms; --dust-color: rgba(214, 191, 255, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 34%; --dust-left: 62%; --dust-x: 22vw; --dust-y: -8vh; --dust-size: 3px; --dust-delay: 180ms; --dust-duration: 1760ms; --dust-color: rgba(255, 214, 138, 0.82);"></span>
+      <span class="stardust" style="--dust-top: 40%; --dust-left: 18%; --dust-x: -22vw; --dust-y: 3vh; --dust-size: 2px; --dust-delay: 210ms; --dust-duration: 1600ms; --dust-color: rgba(255, 247, 236, 0.84);"></span>
+      <span class="stardust" style="--dust-top: 42%; --dust-left: 82%; --dust-x: 20vw; --dust-y: 4vh; --dust-size: 3px; --dust-delay: 260ms; --dust-duration: 1700ms; --dust-color: rgba(214, 191, 255, 0.76);"></span>
+      <span class="stardust" style="--dust-top: 46%; --dust-left: 28%; --dust-x: -20vw; --dust-y: 10vh; --dust-size: 4px; --dust-delay: 300ms; --dust-duration: 1840ms; --dust-color: rgba(255, 214, 138, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 48%; --dust-left: 51%; --dust-x: 4vw; --dust-y: -20vh; --dust-size: 2px; --dust-delay: 340ms; --dust-duration: 1620ms; --dust-color: rgba(255, 247, 236, 0.9);"></span>
+      <span class="stardust" style="--dust-top: 51%; --dust-left: 70%; --dust-x: 24vw; --dust-y: 12vh; --dust-size: 3px; --dust-delay: 390ms; --dust-duration: 1780ms; --dust-color: rgba(255, 214, 138, 0.84);"></span>
+      <span class="stardust" style="--dust-top: 54%; --dust-left: 38%; --dust-x: -10vw; --dust-y: 18vh; --dust-size: 3px; --dust-delay: 430ms; --dust-duration: 1660ms; --dust-color: rgba(214, 191, 255, 0.74);"></span>
+      <span class="stardust" style="--dust-top: 57%; --dust-left: 16%; --dust-x: -26vw; --dust-y: 16vh; --dust-size: 2px; --dust-delay: 470ms; --dust-duration: 1720ms; --dust-color: rgba(255, 247, 236, 0.82);"></span>
+      <span class="stardust" style="--dust-top: 59%; --dust-left: 84%; --dust-x: 22vw; --dust-y: 18vh; --dust-size: 4px; --dust-delay: 520ms; --dust-duration: 1900ms; --dust-color: rgba(255, 214, 138, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 62%; --dust-left: 46%; --dust-x: -2vw; --dust-y: 22vh; --dust-size: 2px; --dust-delay: 560ms; --dust-duration: 1680ms; --dust-color: rgba(255, 247, 236, 0.88);"></span>
+      <span class="stardust" style="--dust-top: 65%; --dust-left: 64%; --dust-x: 16vw; --dust-y: 20vh; --dust-size: 3px; --dust-delay: 620ms; --dust-duration: 1820ms; --dust-color: rgba(214, 191, 255, 0.76);"></span>
+      <span class="stardust" style="--dust-top: 68%; --dust-left: 30%; --dust-x: -18vw; --dust-y: 23vh; --dust-size: 3px; --dust-delay: 660ms; --dust-duration: 1760ms; --dust-color: rgba(255, 214, 138, 0.8);"></span>
+      <span class="stardust" style="--dust-top: 71%; --dust-left: 76%; --dust-x: 18vw; --dust-y: 26vh; --dust-size: 2px; --dust-delay: 720ms; --dust-duration: 1640ms; --dust-color: rgba(255, 247, 236, 0.86);"></span>
+      <span class="stardust" style="--dust-top: 28%; --dust-left: 48%; --dust-x: -3vw; --dust-y: -24vh; --dust-size: 3px; --dust-delay: 100ms; --dust-duration: 1780ms; --dust-color: rgba(255, 214, 138, 0.72);"></span>
+      <span class="stardust" style="--dust-top: 36%; --dust-left: 50%; --dust-x: 6vw; --dust-y: -17vh; --dust-size: 4px; --dust-delay: 240ms; --dust-duration: 1860ms; --dust-color: rgba(255, 247, 236, 0.84);"></span>
+      <span class="stardust" style="--dust-top: 44%; --dust-left: 44%; --dust-x: -8vw; --dust-y: 7vh; --dust-size: 2px; --dust-delay: 310ms; --dust-duration: 1580ms; --dust-color: rgba(214, 191, 255, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 49%; --dust-left: 58%; --dust-x: 12vw; --dust-y: 9vh; --dust-size: 3px; --dust-delay: 360ms; --dust-duration: 1740ms; --dust-color: rgba(255, 214, 138, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 53%; --dust-left: 50%; --dust-x: 0vw; --dust-y: 17vh; --dust-size: 5px; --dust-delay: 410ms; --dust-duration: 1880ms; --dust-color: rgba(255, 247, 236, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 57%; --dust-left: 55%; --dust-x: 8vw; --dust-y: 19vh; --dust-size: 2px; --dust-delay: 500ms; --dust-duration: 1700ms; --dust-color: rgba(214, 191, 255, 0.72);"></span>
+      <span class="stardust" style="--dust-top: 61%; --dust-left: 42%; --dust-x: -12vw; --dust-y: 21vh; --dust-size: 4px; --dust-delay: 570ms; --dust-duration: 1820ms; --dust-color: rgba(255, 214, 138, 0.76);"></span>
+      <span class="stardust" style="--dust-top: 66%; --dust-left: 52%; --dust-x: 2vw; --dust-y: 24vh; --dust-size: 2px; --dust-delay: 640ms; --dust-duration: 1660ms; --dust-color: rgba(255, 247, 236, 0.82);"></span>
+      <span class="stardust" style="--dust-top: 39%; --dust-left: 24%; --dust-x: -28vw; --dust-y: -2vh; --dust-size: 3px; --dust-delay: 280ms; --dust-duration: 1740ms; --dust-color: rgba(255, 214, 138, 0.74);"></span>
+      <span class="stardust" style="--dust-top: 45%; --dust-left: 78%; --dust-x: 28vw; --dust-y: -1vh; --dust-size: 2px; --dust-delay: 330ms; --dust-duration: 1680ms; --dust-color: rgba(255, 247, 236, 0.78);"></span>
+      <span class="stardust" style="--dust-top: 73%; --dust-left: 22%; --dust-x: -24vw; --dust-y: 27vh; --dust-size: 3px; --dust-delay: 760ms; --dust-duration: 1860ms; --dust-color: rgba(214, 191, 255, 0.72);"></span>
+      <span class="stardust" style="--dust-top: 75%; --dust-left: 68%; --dust-x: 20vw; --dust-y: 28vh; --dust-size: 3px; --dust-delay: 800ms; --dust-duration: 1900ms; --dust-color: rgba(255, 214, 138, 0.72);"></span>
+    </div>
+    <div class="gate__content">
+      <p class="eyebrow" id="gateEyebrow"></p>
+      <h1 id="gateTitle"></h1>
+      <p class="gate__intro" id="gateIntro"></p>
+
+      <div class="countdown" id="countdown" aria-label="">
+        <div class="countdown__item">
+          <span id="days">00</span>
+          <small id="daysLabel"></small>
+        </div>
+        <div class="countdown__item">
+          <span id="hours">00</span>
+          <small id="hoursLabel"></small>
+        </div>
+        <div class="countdown__item">
+          <span id="minutes">00</span>
+          <small id="minutesLabel"></small>
+        </div>
+        <div class="countdown__item">
+          <span id="seconds">00</span>
+          <small id="secondsLabel"></small>
+        </div>
+      </div>
+
+      <p class="gate__status" id="gateStatus"></p>
+      <button class="primary-button" id="enterButton" type="button" disabled></button>
+      <p class="dev-note" id="devNote" hidden></p>
+    </div>
+  </section>
+
+  <main class="site-main" id="siteMain">
+    <section class="section hero-section" aria-labelledby="heroTitle">
+      <p class="eyebrow" id="heroEyebrow"></p>
+      <h2 id="heroTitle"></h2>
+      <p id="heroBody"></p>
+    </section>
+
+    <section class="section" aria-labelledby="timelineTitle">
+      <div class="section-heading">
+        <p class="eyebrow" id="timelineEyebrow"></p>
+        <h2 id="timelineTitle"></h2>
+      </div>
+
+      <div class="timeline" id="timelineList"></div>
+    </section>
+
+    <section class="section" aria-labelledby="cardsTitle">
+      <div class="section-heading">
+        <p class="eyebrow" id="cardsEyebrow"></p>
+        <h2 id="cardsTitle"></h2>
+      </div>
+
+      <div class="trait-grid" id="traitGrid"></div>
+    </section>
+
+    <section class="section game-section" aria-labelledby="gameTitle">
+      <div class="section-heading">
+        <p class="eyebrow" id="gameEyebrow"></p>
+        <h2 id="gameTitle"></h2>
+      </div>
+
+      <div class="game-panel">
+        <div class="fortune-area">
+          <p class="game-label" id="fortuneLabel"></p>
+          <div class="fortune-card" id="fortuneCard"></div>
+          <button class="secondary-button" id="drawFortuneButton" type="button"></button>
+        </div>
+
+        <div class="quiz-area is-locked" id="quizArea" aria-live="polite">
+          <p class="game-label" id="quizLabel"></p>
+          <h3 id="quizQuestion"></h3>
+          <div class="quiz-options" id="quizOptions"></div>
+          <p class="quiz-feedback" id="quizFeedback"></p>
+        </div>
+
+        <div class="confession is-locked" id="confession"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="letterTitle">
+      <div class="section-heading">
+        <p class="eyebrow" id="letterEyebrow"></p>
+        <h2 id="letterTitle"></h2>
+      </div>
+
+      <article class="letter-paper" id="letterPaper"></article>
+    </section>
+
+    <section class="section" aria-labelledby="messageTitle">
+      <div class="section-heading">
+        <p class="eyebrow" id="messageEyebrow"></p>
+        <h2 id="messageTitle"></h2>
+      </div>
+
+      <form class="message-form" id="messageForm">
+        <label for="messageInput" id="messageInputLabel"></label>
+        <div class="message-capsule-stage" id="messageCapsuleStage">
+          <textarea id="messageInput" rows="4"></textarea>
+        </div>
+        <fieldset class="mood-picker" aria-labelledby="moodPickerLabel">
+          <legend id="moodPickerLabel"></legend>
+          <div class="mood-options" id="moodOptions"></div>
+        </fieldset>
+        <p class="seal-hint" id="sealHint" aria-live="polite"></p>
+        <button class="primary-button" id="saveMessageButton" type="submit"></button>
+      </form>
+
+      <div class="message-history">
+        <div class="message-history__header">
+          <h3 id="messageHistoryTitle"></h3>
+          <p class="message-stats" id="messageStats"></p>
+        </div>
+        <div class="empty-state" id="emptyState"></div>
+        <div class="message-galaxy" id="messageGalaxy" role="list"></div>
+        <div class="message-star-card" id="messageStarCard" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="pwa-register.js"></script>
+</body>
+</html>
